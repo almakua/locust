@@ -1,0 +1,16 @@
+SEARCH_TERMS = [
+    "smalto",
+    "semipermanente",
+    "accessori",
+    "pennelli",
+    "gel",
+    "ricostruzione",
+    "offerte",
+    "glitter",
+    "asparago",
+    "fulmicotone",
+    "nani da giardino",
+    "dove comprare un divano",
+    "supposte",
+    "inseminazione artificiale",
+]
