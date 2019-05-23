@@ -2,6 +2,19 @@ PRODUCTS = [
     "/sugar-secret.html",
     "/gel-color-f01purewhite.html",
     "/pennello-trendy-super-fine.html",
+    "/crystalpixie-candy-land.html",
+    "/crystalpixie-deluxe-rush.html",
+    "/crystalpixieedge-tropic-seafoam.html",
+    "/gel-color-c42-fuxia-fuo.html",
+    "/crystalpixie-classy-sassy.html",
+    "/crystalpixie-comic-pop.html",
+    "/gel-color-c42-fuxia-fuo.html",
+]
+
+PRODUCTS_PROD = [
+    "/sugar-secret.html",
+    "/gel-color-f01purewhite.html",
+    "/pennello-trendy-super-fine.html",
     "/gel-semipermanente-per-unghie-sp14-virgin.html",
     "/crystalpixie-candy-land.html",
     "/crystalpixie-deluxe-rush.html",

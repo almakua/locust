@@ -51,7 +51,7 @@ class pressureTest(TaskSequence):
                          "login[username]": self.email, "login[password]": self.password , "form_key": formid , "send": "" } )
 
         # enable it for debugging purpouse
-        #logging.info('Login with %s email and %s password', self.email, self.password)
+        logging.info('Login with %s email and %s password', self.email, self.password)
 
     @seq_task(3)
     @task(7)
