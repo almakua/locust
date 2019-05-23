@@ -44,10 +44,6 @@ class pressureTest(TaskSequence):
         #for data in data:
         formid = (data.get('value'))
         r = self.client.post("/customer/account/loginPost", {
-                         #"login[username]": "aaa@aaa.com", 
-                         #"login[password]": "asparago" , 
-                         #"form_key": formid , 
-                         #"send": "" } )
                          "login[username]": self.email, "login[password]": self.password , "form_key": formid , "send": "" } )
 
         # enable it for debugging purpouse
