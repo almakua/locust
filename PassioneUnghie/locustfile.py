@@ -10,7 +10,7 @@ with open('credentials.csv', 'rb') as f:
     reader = csv.reader(f)
     USER_CREDENTIALS = list(reader)
 
-class UserBehavior(TaskSet):
+class justView(TaskSet):
 
     @task(1)
     def search(self):
@@ -74,25 +74,25 @@ class pressureTest(TaskSequence):
         self.client.post(addtocart)
 
 
-    @seq_task(5)
+    @seq_task(6)
     @task(1)
     def checkout(self):
         self.client.post("/gomage_checkout/onepage/ajax/", { "billing_address_id": "570201", "billing[firstname]": "aaa", "billing[lastname]": "aaa", "billing[fiscaleitalia_fiscalcode]": "aaa12345678", "billing[street][]": "aaa", "billing[street][]": "12", "billing[city]": "MilAno", "billing[region_id]": "610", "billing[region]": "", "billing[postcode]": "20000", "billing[country_id]": "IT", "billing[telephone]": "3333333333", "billing[company]": "", "billing[vat_id]": "", "billing[pec]": "", "billing[sdi_code]": "", "billing[use_for_shipping]": "1", "shipping_address_id": "570201", "shipping[firstname]": "aaa", "shipping[lastname]": "aaa", "shipping[street][]": "aaa", "shipping[street][]": "12", "shipping[city]": "MilAno", "shipping[region_id]": "610", "shipping[region]": "", "shipping[postcode]": "20000", "shipping[country_id]": "IT", "shipping[telephone]": "3333333333", "shipping_method": "owebiashipping1_case_1", "payment[method]": "bankpayment", "remove": "0", "coupon_code": "", "customer_comment": "", "accept_terms": "1" , "action": "save_payment_methods"} )
         self.client.post("/gomage_checkout/onepage/save/", { "billing_address_id": "570201", "billing[firstname]": "aaa", "billing[lastname]": "aaa", "billing[fiscaleitalia_fiscalcode]": "aaa12345678", "billing[street][]": "aaa", "billing[street][]": "12", "billing[city]": "MilAno", "billing[region_id]": "610", "billing[region]": "", "billing[postcode]": "20000", "billing[country_id]": "IT", "billing[telephone]": "3333333333", "billing[company]": "", "billing[vat_id]": "", "billing[pec]": "", "billing[sdi_code]": "", "billing[use_for_shipping]": "1", "shipping_address_id": "570201", "shipping[firstname]": "aaa", "shipping[lastname]": "aaa", "shipping[street][]": "aaa", "shipping[street][]": "12", "shipping[city]": "MilAno", "shipping[region_id]": "610", "shipping[region]": "", "shipping[postcode]": "20000", "shipping[country_id]": "IT", "shipping[telephone]": "3333333333", "shipping_method": "owebiashipping1_case_1", "payment[method]": "bankpayment", "remove": "0", "coupon_code": "", "customer_comment": "", "accept_terms": "1" } )
 
-    @seq_task(6)
+    @seq_task(7)
     @task(1)
     def logout(self):
         self.client.get("/customer/account/logout" )
 
 class lurker(HttpLocust):
-    task_set = UserBehavior
-    weight = 1
-    min_wait = 700
-    max_wait = 1500
+    task_set = justView
+    weight = 3
+    min_wait = 30000
+    max_wait = 60000
 
 class loggedUser(HttpLocust):
     task_set = pressureTest
-    weight = 2
-    min_wait = 500
-    max_wait = 1500
+    weight = 7
+    min_wait = 30000
+    max_wait = 60000
