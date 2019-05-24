@@ -11,7 +11,7 @@ PRODUCTS_STAGE = [
     "/gel-color-c42-fuxia-fuo.html",
 ]
 
-PRODUCTS_PROD = [
+PRODUCTS = [
     "/salviette-pads-hq-500-pz.html",
     "/dosatore-a-pompa.html",
     "/barattolo-vuoto-5-ml.html",
