@@ -88,11 +88,11 @@ class pressureTest(TaskSequence):
 class lurker(HttpLocust):
     task_set = justView
     weight = 3
-    min_wait = 30000
-    max_wait = 60000
+    min_wait = 15 * 1000
+    max_wait = 30 * 1000
 
 class loggedUser(HttpLocust):
     task_set = pressureTest
     weight = 7
-    min_wait = 30000
-    max_wait = 60000
+    min_wait = 15 * 1000
+    max_wait = 30 * 1000
