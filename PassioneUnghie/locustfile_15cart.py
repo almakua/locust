@@ -17,10 +17,6 @@ class justView(TaskSet):
             "User-Agent": USER_AGENTS[random.randint(0, len(USER_AGENTS) - 1)]}
         self.client.headers = self.headers
 
-    self.headers = {
-        "User-Agent": USER_AGENTS[random.randint(0, len(USER_AGENTS) - 1)]
-        }
-
     @task(1)
     def search(self):
         self.client.headers = self.headers
