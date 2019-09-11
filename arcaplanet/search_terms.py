@@ -1,0 +1,15 @@
+SEARCH_TERMS = [
+    "cane",
+    "gatto",
+    "guinzaglio",
+    "cibo secco",
+    "cibo umido",
+    "croccantini",
+    "lettiera",
+    "dieta cane",
+    "dieta gatto",
+    "fulmicotone",
+    "nani da giardino",
+    "dove comprare un divano",
+    "contenitore",
+]

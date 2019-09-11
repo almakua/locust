@@ -1,15 +1,14 @@
 PRODUCTS_STAGE = [
-    "/sugar-secret.html",
-    "/gel-color-f01purewhite.html",
-    "/pennello-trendy-super-fine.html",
-    "/crystalpixie-candy-land.html",
-    "/crystalpixie-deluxe-rush.html",
-    "/crystalpixieedge-tropic-seafoam.html",
-    "/gel-color-c42-fuxia-fuo.html",
-    "/crystalpixie-classy-sassy.html",
-    "/crystalpixie-comic-pop.html",
-    "/gel-color-c42-fuxia-fuo.html",
-]
+    "/royal-canin-size-maxi-junior.html",
+    "/frontline-tri-act.html",
+    "/virtus-dog-primitive-adult.html",
+    "/merci-copricesta-arancione.html",
+    "/fontana-drinkwell-original.html",
+    "/yes-toilette-chiusa-juliet-cipria.html",
+    "/yes-toilette-angolare-aperta-madison-blu-con-paletta.html",
+    "/yes-toilette-trinity-chiusa-angolare.html",
+    "/yes-toilette-angolare-chiusa-grace-blu-con-paletta.html",
+    ]
 
 PRODUCTS = [
     "/salviette-pads-hq-500-pz.html",
