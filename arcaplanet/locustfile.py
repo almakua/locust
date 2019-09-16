@@ -65,7 +65,7 @@ class pressureTest(TaskSequence):
     @seq_task(5)
     @task(2)
     def addcart(self):
-        url = PRODUCTS[random.randint(0,len(PRODUCTS)-1)]
+        url = PRODUCTS[random.randint(0,len(PRODUCTS_STAGE)-1)]
         r = self.client.get(url)
         time.sleep(1)
         soup = BeautifulSoup(r.content, "html.parser")
@@ -87,11 +87,11 @@ class pressureTest(TaskSequence):
 class lurker(HttpLocust):
     task_set = justView
     weight = 3
-    min_wait = 15 * 1000
-    max_wait = 30 * 1000
+    min_wait = 1 * 1000
+    max_wait = 3 * 1000
 
 class loggedUser(HttpLocust):
     task_set = pressureTest
     weight = 7
-    min_wait = 15 * 1000
-    max_wait = 30 * 1000
+    min_wait = 1 * 1000
+    max_wait = 3 * 1000
