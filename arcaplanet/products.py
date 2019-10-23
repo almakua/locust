@@ -1,4 +1,4 @@
-PRODUCTS_STAGE = [
+PRODUCTS = [
     "/royal-canin-size-maxi-junior.html",
     "/frontline-tri-act.html",
     "/virtus-dog-primitive-adult.html",
@@ -9,26 +9,3 @@ PRODUCTS_STAGE = [
     "/yes-toilette-trinity-chiusa-angolare.html",
     "/yes-toilette-angolare-chiusa-grace-blu-con-paletta.html",
     ]
-
-PRODUCTS = [
-    "/salviette-pads-hq-500-pz.html",
-    "/dosatore-a-pompa.html",
-    "/barattolo-vuoto-5-ml.html",
-    "/vaschetta-per-miscelazione.html",
-    "/pinzetta-obliqua.html",
-    "/spazzolino-per-unghie.html",
-    "/bastoncini-d-arancio-10-pz.html",
-    "/nastro-proteggi-dita.html",
-    "/pinza-stringivalli.html",
-    "/fibra-di-vetro.html",
-    "/aspiratore-nailduster.html",
-    "/sacchetto-raccoglipolvere.html",
-    "/taglia-tip.html",
-    "/display-32-tip.html",
-    "/gel-color-c1-chianti.html",
-    "/gel-color-c2-ferrari.html",
-    "/gel-color-c5-albicocca.html",
-    "/gel-color-c7-nero-profondo.html",
-    "/gel-color-c8-malibu.html",
-    "/gel-color-c9-verde-petrolio.html",
-]
